@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Rubik';
+  src: url("../../fonts/Rubik-Regular.eot");
+  src: local("☺"), url("../../fonts/Rubik-Regular.woff") format("woff"),
+    url("../../fonts/Rubik-Regular.ttf") format("truetype"), 
+    url("../../fonts/Rubik-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../../fonts/Rubik-Bold.eot");
+  src: local("☺"), url("../../fonts/Rubik-Bold.woff") format("woff"),
+    url("../../fonts/Rubik-Bold.ttf") format("truetype"), 
+    url("../../fonts/Rubik-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    background: #FFFFFF;
+    font-family: Rubik, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+body.dark-theme {
+  background: #121212;
+}
+
+.App {
+    min-height:100vh;
+    padding: 0px 5.46% 21px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.td, .th, button , 
+.noteForm .infoSelectedDAteAndTime
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ button {
+    border: none;
+    background: #F3F2F1;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+/*DATEPICKER....................................................*/
+
+.selectThemeDayOrNight{
+    display: flex;
+    margin-top: 23px;
+    margin-bottom: 27px ;
+    margin-right: 0.78% ;
+    justify-content: flex-end;
+}
+
+.buttonSelectThemeDayOrNight{
+    width: 29px;
+    height: 29px;
+    border: none;
+    background: url(../img/Vector.png)  no-repeat center top / cover;
+    background-size: contain;
+}
+
+
+/*CALENDAR......................................................*/
+
+#calendar{
+    max-width: 450px;
+    margin-bottom: 14px;
+}
+
+.calendarHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+body.dark-theme {
+    color: #eee;
+    background: #121212;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: #414141;
+/*    font-family: 'Rubik';*/
+    font-style: normal;
+    font-weight: 700;
+}
+
+body.dark-theme .info{
+    color: #eee;
+}
+
+.nav {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav button.prev {
+   background: #F3F2F1 url(../img/prev.png) no-repeat center center;
+   background-size: contain;
+   background-size:22% 
+}
+
+.nav button.next {
+   background: #F3F2F1 url(../img/next.png) no-repeat center center;
+   background-size: contain;
+   background-size:22% 
+}
+
+.table{
+    margin-top: 33.5px;
+}
+
+.thead .tr .td{
+}
+
+.thead .tr .td{
+    color: #414141;
+    width: 40px;
+    height: 27px;
+    margin-bottom: 10px;
+
+}
+
+body.dark-theme .thead .tr .td{
+    color: #eee;
+}
+
+.tr{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #8F8F8F;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+body.dark-theme .td{
+    color: #eee;
+}
+
+.todayDay{
+    background:  #28AFEA;
+    color: #FFFFFF;
+}
+
+.dayWithNotes{
+   background:  #70C05B;
+   color: #FFFFFF;
+}
+
+.currentDay{
+   background:  #FF6633;
+   color: #FFFFFF;
+}
+
+
+/*NOTES.........................................................................*/
+
+/*SELECTTIMES..................................................*/
+.selectTimes .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectTimes .row{
+    margin-bottom: 17px;
+}
+
+.selectTimes .row button{
+    width: 158px;
+    height: 40px;
+    color: #606060;
+    font-family: Rubik;
+}
+
+.selectTimes .row button:nth-child(2){
+    margin-left: 17px;
+    
+}
+
+.selectTimes .row button.check{
+    background: #70C05B;
+    color: #FFFFFF;
+}
+
+
+/*NOTEFORM......................................................................*/
+
+.noteForm {
+    margin-bottom: 17px;
+}
+
+.noteForm .infoSelectedDAteAndTime{
+    color: #414141;
+    margin-bottom: 17px;
+    height: 27px;
+}
+
+body.dark-theme .noteForm .infoSelectedDAteAndTime{
+  color: #eee;
+}
+
+.noteForm .buttonConfirm {
+    width: 100%;
+    height: 40px;
+    background: #FF6633;
+}
+
+.noteForm .buttonConfirm .checkMark{
+    width: 17px;
+    height: 12px;
+    margin-left: 1.38%;
+    background:  url(../img/checkMark.png) no-repeat center center;
+    background-size: contain;
+}
+
+.noteForm .buttonConfirm .text{
+    width: 278px;
+    height: 24px;
+    margin-left: 3.38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Rubik;
+}
+
+
+/*NOTE...........................................................*/
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 27px;
+    color: #414141;
+}
+
+body.dark-theme .post .post__content{
+  color: #eee;
+}
+
+.post button{
+    color: #606060;
+    background: transparent;
+}
+
+body.dark-theme post__btns{
+    color: #eee;
+}
+
+.text_remove_confirm{
+    margin-bottom: 17px;
+}
+
+body.dark-theme .post .btn_remove_note {
+    color: #eee;
+}
+
+.btns_remove_confirm{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns_remove_confirm button{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
