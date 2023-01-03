@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bondarenkoav240486/alvi-beauty-datepicker.git/static/css/main.dfb03b9f.css",
+    "main.js": "/bondarenkoav240486/alvi-beauty-datepicker.git/static/js/main.df7ed6dd.js",
+    "index.html": "/bondarenkoav240486/alvi-beauty-datepicker.git/index.html",
+    "main.dfb03b9f.css.map": "/bondarenkoav240486/alvi-beauty-datepicker.git/static/css/main.dfb03b9f.css.map",
+    "main.df7ed6dd.js.map": "/bondarenkoav240486/alvi-beauty-datepicker.git/static/js/main.df7ed6dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfb03b9f.css",
+    "static/js/main.df7ed6dd.js"
+  ]
+}
