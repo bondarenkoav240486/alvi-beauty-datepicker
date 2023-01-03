@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/alvi-beauty-datepicker/static/css/main.dfb03b9f.css",
+    "main.css": "/alvi-beauty-datepicker/static/css/main.bfb89aff.css",
     "main.js": "/alvi-beauty-datepicker/static/js/main.df7ed6dd.js",
     "index.html": "/alvi-beauty-datepicker/index.html",
-    "main.dfb03b9f.css.map": "/alvi-beauty-datepicker/static/css/main.dfb03b9f.css.map",
+    "main.bfb89aff.css.map": "/alvi-beauty-datepicker/static/css/main.bfb89aff.css.map",
     "main.df7ed6dd.js.map": "/alvi-beauty-datepicker/static/js/main.df7ed6dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfb03b9f.css",
+    "static/css/main.bfb89aff.css",
     "static/js/main.df7ed6dd.js"
   ]
 }
