@@ -4,7 +4,6 @@ import { nanoid } from 'nanoid'
 const toolkitSlice = createSlice({
 	name: "toolkit",
 	initialState: {
-		// visible: true,
 		allNotes:  
 			[
 				{
@@ -22,16 +21,12 @@ const toolkitSlice = createSlice({
    				// {id:'111', title:'dateNoteSTATE', body:''},
 			],
 		dateNote:{title:'',body:''},
-		// save:true,
 		modal:false,
 		year:new Date().getFullYear(),
 		month:new Date().getMonth(),
 		dates:[],
 	},
 	reducers: {
-		// setVisibleAction(state,action) {
-		// 	state.visible =  action.payload
-		// },
 		setAllNotesAction(state,action) {
 			state.allNotes = action.payload
 		},
@@ -42,12 +37,6 @@ const toolkitSlice = createSlice({
 		setDateNoteAction(state,action) {
 			state.dateNote =  action.payload
 		},
-		// setSaveAction(state,action) {
-		// 	state.save =  action.payload
-		// },
-		// setFilterAction(state,action) {
-		// 	state.filter =  action.payload
-		// },
 		setModalAction(state,action) {
 			state.modal =  action.payload
 		},
@@ -96,11 +85,8 @@ export const {	setallNotesFindIdNotesAction,
 				saveChangesAction, 
 				setInitNotesAllStateAction, 
 				setModalAction, 
-				// setFilterAction, 
-				// setSaveAction, 
 				setDateNoteAction, 
 				setDateNotesAction, 
 				setAllNotesAction, 
-				// setVisibleAction, 
 				initSelectedDateAction,
 			} = toolkitSlice.actions
