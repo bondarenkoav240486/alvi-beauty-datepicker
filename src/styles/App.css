@@ -81,6 +81,12 @@ body.dark-theme {
     background-size: contain;
 }
 
+body.dark-theme .buttonSelectThemeDayOrNight{
+    background: #000000 url(../img/sun2.jpg)  no-repeat center center;
+    /*background-size: contain;*/
+    background-size:120% 
+
+}
 
 /*CALENDAR......................................................*/
 
