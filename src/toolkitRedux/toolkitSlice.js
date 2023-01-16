@@ -15,6 +15,7 @@ const toolkitSlice = createSlice({
 					+ new Date().getMonth()
 					+ '.' 
 					+ new Date().getFullYear(),
+					darkThemeOnOff: false,
 				},
 			],
 		dateNotes:[
@@ -25,6 +26,7 @@ const toolkitSlice = createSlice({
 		year:new Date().getFullYear(),
 		month:new Date().getMonth(),
 		dates:[],
+		// darkThemeOnOff: false,
 	},
 	reducers: {
 		setAllNotesAction(state,action) {
@@ -69,7 +71,11 @@ const toolkitSlice = createSlice({
 		},
 		initSelectedDateAction(state,action) {
 			state.allNotes[0].selectedDate = action.payload
-		}
+		},
+		setDarkThemeOnOffAction(state,action) {
+			state.allNotes[0].darkThemeOnOff = 
+				action.payload
+		},
 	}	
 })
 
@@ -89,4 +95,5 @@ export const {	setallNotesFindIdNotesAction,
 				setDateNotesAction, 
 				setAllNotesAction, 
 				initSelectedDateAction,
+				setDarkThemeOnOffAction,
 			} = toolkitSlice.actions

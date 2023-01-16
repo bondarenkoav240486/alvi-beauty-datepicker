@@ -20,11 +20,6 @@ const NoteItem = (props) => {
         dispatch(setDateNotesAction(par))
     );
 
-    // const save = useSelector(state => state.toolkit.save);
-    // const setSave = (par) => ( 
-    //     dispatch(setSaveAction(par))
-    // );
-
     const setModal = (par) => ( 
         dispatch(setModalAction(par))
     );

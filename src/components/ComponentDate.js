@@ -5,7 +5,6 @@ import {
         setNotesOfThisDateAction, 
         setallNotesDateIdAction, 
         pushNewNotesDateAction, 
-        // setVisibleAction,
         setDateNoteAction 
         } from "../toolkitRedux/toolkitSlice";
 
