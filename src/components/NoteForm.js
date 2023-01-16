@@ -32,12 +32,12 @@ const NoteForm = () => {
         if (dateNotes.length >= 4) {
             return
         }
-        if (dateNote.title === '') {
-            return
-        }
-        if (dateNote.body === '') {
-            return
-        }
+        // if (dateNote.title === '') {
+        //     return
+        // }
+        // if (dateNote.body === '') {
+        //     return
+        // }
         const newPost = {
             ...dateNote, id: nanoid(8)
         }
