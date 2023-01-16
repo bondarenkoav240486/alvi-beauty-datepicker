@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alvi-beauty-datepicker/static/css/main.6057f5c9.css",
-    "main.js": "/alvi-beauty-datepicker/static/js/main.75bb79c4.js",
+    "main.js": "/alvi-beauty-datepicker/static/js/main.08535467.js",
     "static/media/Rubik-Regular.svg": "/alvi-beauty-datepicker/static/media/Rubik-Regular.dcf4dad65466574f64c0.svg",
     "static/media/Rubik-Bold.svg": "/alvi-beauty-datepicker/static/media/Rubik-Bold.b336b2a722fcf0463707.svg",
     "static/media/Rubik-Regular.woff": "/alvi-beauty-datepicker/static/media/Rubik-Regular.2e08d8b2a734148487ca.woff",
@@ -12,10 +12,10 @@
     "static/media/Rubik-Bold.ttf": "/alvi-beauty-datepicker/static/media/Rubik-Bold.b24c64f715ba25a6e7f5.ttf",
     "index.html": "/alvi-beauty-datepicker/index.html",
     "main.6057f5c9.css.map": "/alvi-beauty-datepicker/static/css/main.6057f5c9.css.map",
-    "main.75bb79c4.js.map": "/alvi-beauty-datepicker/static/js/main.75bb79c4.js.map"
+    "main.08535467.js.map": "/alvi-beauty-datepicker/static/js/main.08535467.js.map"
   },
   "entrypoints": [
     "static/css/main.6057f5c9.css",
-    "static/js/main.75bb79c4.js"
+    "static/js/main.08535467.js"
   ]
 }
