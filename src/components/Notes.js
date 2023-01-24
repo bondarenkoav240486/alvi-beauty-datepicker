@@ -65,12 +65,12 @@ const Notes = () => {
             );
     }
 
-    console.log( 
-        localStorage.getItem(
-                // 'key2'
-            'key_alvi_beauty_datepicker'
-        )
-    )
+    // console.log( 
+    //     localStorage.getItem(
+    //             // 'key2'
+    //         'key_alvi_beauty_datepicker'
+    //     )
+    // )
     //............................................................. 
     const getTodayMonth = (numberOfMonth) => {
         let  monthes = 
@@ -118,7 +118,15 @@ const Notes = () => {
             ) === undefined 
         )
         {
-            setDateNotes(allNotes[0].notes);
+            // setDateNotes(allNotes[0].notes);
+            let obj = 
+                {
+                    id: Date.now(),
+                    date: todayDate,
+                    notes:[]
+                };
+            dispatch( pushNewNotesDateAction(obj) );
+            setDateNotes(obj.notes);
 
         } else {        
             setDateNotes(
@@ -129,6 +137,12 @@ const Notes = () => {
         }
     }, [allNotes[0].notes]);
 
+    const removeAllNotes = () => {
+        localStorage.clear();
+        // setDateNotes(allNotes[0].notes);                  
+    }
+
+
     return (
         <div className = "dateNotes">
 
@@ -137,6 +151,15 @@ const Notes = () => {
             <NoteForm/>
 
             <NotesList/>
+
+             <div className="buttons">    
+                <button 
+                    id = 'removeAllNotes'
+                    onClick={removeAllNotes}
+                >
+                    Bидалити всі записи
+                </button>
+            </div>
         </div>
     );
 };
