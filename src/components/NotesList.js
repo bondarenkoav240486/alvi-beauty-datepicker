@@ -11,6 +11,7 @@ const NotesList = () => {
     const dispatch = useDispatch();
     const dateNotes = useSelector(state => state.toolkit.dateNotes);
 
+
     //POSTS sortedAndSearched....................................
     const sortedPosts = useMemo(()=>{
             return  [...dateNotes].sort( (a,b)=>{ 

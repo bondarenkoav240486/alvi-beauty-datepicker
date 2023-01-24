@@ -40,19 +40,68 @@ const Notes = () => {
 
     let bufferInitAllNotes;
    
-    if (JSON.parse( localStorage.getItem('key2') )===null) {
-        localStorage.setItem('key2',JSON.stringify(allNotes));
+    if (
+        JSON.parse( 
+            localStorage.getItem(
+                // 'key2'
+                'key_alvi_beauty_datepicker'
+            ) 
+        )===null
+    ) 
+    {
+        localStorage.setItem(
+            'key_alvi_beauty_datepicker',
+            JSON.stringify(allNotes)
+        );
     }
     else{
-        bufferInitAllNotes= JSON.parse( localStorage.getItem('key2') );
+        bufferInitAllNotes
+        = 
+        JSON.parse( 
+            localStorage.getItem(
+                // 'key2'
+                'key_alvi_beauty_datepicker'
+                ) 
+            );
+    }
+
+    console.log( 
+        localStorage.getItem(
+                // 'key2'
+            'key_alvi_beauty_datepicker'
+        )
+    )
+    //............................................................. 
+    const getTodayMonth = (numberOfMonth) => {
+        let  monthes = 
+            [
+                'січня','лютого','березня','квітня', 
+                'травня','червня','липня','серпня',
+                'вересня','жовтня','листопада','грудня'
+            ];
+
+        return monthes[numberOfMonth]
     }
     
     useEffect(() => {
         setAllNotes(bufferInitAllNotes);
         initSelectedDate(todayDate);
+        setDateNote(
+            { ...dateNote, 
+                title:  
+                    new Date().getDate()+ ' ' 
+                    + getTodayMonth(month)
+                    + ' ' 
+                    + year
+            }
+        )
     }, []);
     useEffect(() => {
-        localStorage.setItem('key2',JSON.stringify(allNotes));
+        localStorage.setItem(
+            // 'key2',
+            'key_alvi_beauty_datepicker',
+            JSON.stringify(allNotes)
+        );
     }, [allNotes]);
     
     let todayDate = 

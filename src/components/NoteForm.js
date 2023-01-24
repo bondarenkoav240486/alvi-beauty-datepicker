@@ -24,7 +24,11 @@ const NoteForm = () => {
     const saveChanges = () => {
         let date = allNotes[0].selectedDate ;
         dispatch( setallNotesFindIdNotesAction(date) )
-        localStorage.setItem('key2',JSON.stringify(allNotes));
+        localStorage.setItem(
+            // 'key2',
+            'key_alvi_beauty_datepicker',
+            JSON.stringify(allNotes)
+        );
     }
 
     const addNewPost = (e) => {
