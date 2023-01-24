@@ -4,6 +4,7 @@ import NotesList from './NotesList';
 import NoteForm from './NoteForm';
 import SelectTimes from './SelectTimes.js';
 import {useDispatch,useSelector} from "react-redux";
+import { nanoid } from 'nanoid'
 import {
         setDateNoteAction, 
         setDateNotesAction, 
@@ -142,7 +143,7 @@ const Notes = () => {
         setAllNotes(
             [
                 {
-                    id: Date.now(),
+                    id: nanoid(8),
                     date:'',
                     notes:[],
                     selectedDate:new Date().getDate() 
@@ -150,6 +151,7 @@ const Notes = () => {
                     + new Date().getMonth()
                     + '.' 
                     + new Date().getFullYear(),
+                    darkThemeOnOff: false,
                 },
             ]
         )                 
