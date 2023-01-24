@@ -139,7 +139,20 @@ const Notes = () => {
 
     const removeAllNotes = () => {
         localStorage.clear();
-        // setDateNotes(allNotes[0].notes);                  
+        setAllNotes(
+            [
+                {
+                    id: Date.now(),
+                    date:'',
+                    notes:[],
+                    selectedDate:new Date().getDate() 
+                    + '.' 
+                    + new Date().getMonth()
+                    + '.' 
+                    + new Date().getFullYear(),
+                },
+            ]
+        )                 
     }
 
 
